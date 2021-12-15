@@ -67,12 +67,13 @@ export const SubmitButton = styled.button`
   border-radius: 100px 100px 100px 100px;
   cursor: pointer;
   transition: all, 240ms ease-in-out;
-  background: rgb(241, 196, 15);
+  /* background: rgb(241, 196, 15);
   background: linear-gradient(
     58deg,
     rgba(241, 196, 15, 1) 20%,
     rgba(243, 172, 18, 1) 100%
-  );
+  ); */
+  background: var(--clr-grey-10);
 
   &:hover {
     filter: brightness(1.03);
