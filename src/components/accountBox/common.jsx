@@ -20,7 +20,7 @@ export const Label = styled.h3`
 
 export const MutedLink = styled.a`
   font-size: 11px;
-  color: rgba(200, 200, 200, 0.8);
+  color: rgb(241, 196, 15);
   font-weight: 500;
   text-decoration: none;
 `;
@@ -73,7 +73,7 @@ export const SubmitButton = styled.button`
     rgba(241, 196, 15, 1) 20%,
     rgba(243, 172, 18, 1) 100%
   ); */
-  background: var(--clr-grey-10);
+  background: rgb(241, 196, 15);
 
   &:hover {
     filter: brightness(1.03);
