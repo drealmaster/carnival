@@ -27,7 +27,7 @@ const CartButton = () => {
        {user ? (
           <button
           type='button'
-          className='auth-btn'
+          className='btn2'
           onClick={()=>{
             closeSidebar()
             navigate('/');
@@ -39,7 +39,7 @@ const CartButton = () => {
        
       ) : (
         <Link to='/login'>
-        <button type='button' className='auth-btn' onClick={closeSidebar} >
+        <button type='button' className='btn2' onClick={closeSidebar} >
             Login <FaUserPlus />
           </button>
         </Link>
@@ -49,55 +49,22 @@ const CartButton = () => {
 }
 
 const Wrapper = styled.div`
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: center;
-  justify-items: center;
-  width: 225px;
-  .cart-btn {
-    color: var(--clr-grey-1);
-    font-size: 1.5rem;
-    letter-spacing: var(--spacing);
-    color: var(--clr-grey-1);
-    display: flex;
-    align-items: center;
-  }
-  .cart-container {
-    display: flex;
-    align-items: center;
-    position: relative;
+ .btn2{
+    background: var(--clr-primary-5) !important;
+    color: var(--clr-primary-10) !important;
+    padding: 0.5rem 4.2rem !important;
+    letter-spacing: var(--spacing) !important;
+    font-weight: 400 !important;
+    transition: var(--transition) !important;
+    font-size: 0.9rem !important;
+    cursor: pointer !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) !important;
+    border-radius: var(--radius) !important;
+    border-color: transparent !important;
+  margin-top: 1rem;
     svg {
-      height: 1.6rem;
-      margin-left: 5px;
-    }
-  }
-  .cart-value {
-    position: absolute;
-    top: -10px;
-    right: -16px;
-    background: var(--clr-primary-5);
-    width: 16px;
-    height: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    font-size: 0.75rem;
-    color: var(--clr-white);
-    padding: 12px;
-  }
-  .auth-btn {
-    display: flex;
-    align-items: center;
-    background: transparent;
-    border-color: transparent;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: var(--clr-grey-1);
-    letter-spacing: var(--spacing);
-    svg {
-      margin-left: 5px;
-    }
+           margin-left: 5px;
+        }
   }
 `
 export default CartButton

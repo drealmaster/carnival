@@ -15,7 +15,7 @@ const Nav = () => {
       <div className='nav-center'>
         <div className='nav-header'>
           <Link to='/'>
-           <h1>Carnival Forex</h1>
+           <h1>Carnival Forex</h1>          
           </Link>
           <button type='button' className='nav-toggle' onClick={openSidebar}>
             <FaBars />
@@ -63,7 +63,7 @@ const NavContainer = styled.nav`
     justify-content: space-between !important;
     h1 {
       width: 275px !important;
-      margin-left: 15px !important;
+      color: var(--clr-primary-5) !important;
       font-size: 1.4rem !important;
       align-items: center !important;
       justify-content: center !important;
@@ -88,6 +88,25 @@ const NavContainer = styled.nav`
   @media (min-width: 992px) {
     .nav-toggle {
       display: none;
+    }
+
+    .navBtn{
+      background: var(--clr-primary-5) !important;
+      color: var(--clr-primary-10) !important;
+      padding: 1rem 3rem !important;
+      letter-spacing: var(--spacing) !important;
+      // display: inline-block !important;
+      font-weight: 400 !important;
+      transition: var(--transition) !important;
+      font-size: 0.9rem !important;
+      cursor: pointer !important;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) !important;
+      border-radius: var(--radius) !important;
+      border-color: transparent !important;
+    
+      svg {
+             margin-left: 5px;
+          }
     }
     .nav-center {
       display: grid !important;

@@ -24,7 +24,7 @@ const Sidebar = () => {
       >
         <div className='sidebar-header'>
           <h1>Carnival Forex</h1>
-          <button className='close-btn' onClick={closeSidebar}>
+          <button type='button' className='close-btn' onClick={closeSidebar}>
             <FaTimes />
           </button>
         </div>
@@ -82,15 +82,17 @@ const SidebarContainer = styled.div`
     width: 275px;
       margin-left: -40px;
       font-size: 1.4rem;
+      margin-top: 1rem;
+      color: var(--clr-primary-5) !important;
+      
   }
   .close-btn {
     font-size: 2rem;
     background: transparent;
+    color: var(--clr-primary-5) !important;
     border-color: transparent;
-    color: var(--clr-primary-5);
     transition: var(--transition);
     cursor: pointer;
-    color: var(--clr-red-dark);
     margin-top: 0.2rem;
   }
   .close-btn:hover {
@@ -102,6 +104,7 @@ const SidebarContainer = styled.div`
   }
   .links {
     margin-bottom: 2rem;
+    margin-left: -15px;
   }
   .links a {
     display: block;

@@ -89,13 +89,13 @@ const Wrapper = styled.div`
 }
 
 .accordion-wrapper .accordion-item h3.accordion-title button.active {
-  background-color: #dfbd85;
+  background-color: var(--clr-primary-5);
   color: #ffffff;
   border: #dfbd85 solid 1px;
 }
 
 .accordion-wrapper .accordion-item h3.accordion-title button:hover {
-    background-color: #dfbd85;
+    background-color: var(--clr-primary-10);
 }
 
 .accordion-wrapper .accordion-item h3.accordion-title button span.title-wrapper {

@@ -7,8 +7,8 @@ const ContactForm = () => {
   return ( 
       <Wrapper>
        <div class="container">
-      <span class="big-circle"></span>
-      <img src="img/shape.png" class="square" alt="" />
+      {/* <span class="big-circle"></span> */}
+      {/* <img src="img/shape.png" class="square" alt="" /> */}
       <div class="form">
         <div class="contact-info">
           <h3 class="title">Let's get in touch</h3>
@@ -48,8 +48,8 @@ const ContactForm = () => {
         </div>
 
         <div class="contact-form">
-          <span class="circle one"></span>
-          <span class="circle two"></span>
+          {/* <span class="circle one"></span>
+          <span class="circle two"></span> */}
 
           <form action="index.html" autocomplete="off">
             <h3 class="title">Contact us</h3>
@@ -116,7 +116,7 @@ textarea {
 }
 
 .contact-form {
-  background-color: #1abc9c;
+  background-color:var(--clr-primary-5);
   position: relative;
 }
 
@@ -145,7 +145,7 @@ textarea {
   position: absolute;
   width: 26px;
   height: 26px;
-  background-color: #1abc9c;
+  background-color: var(--clr-primary-5);
   transform: rotate(45deg);
   top: 50px;
   left: -13px;
@@ -221,7 +221,7 @@ textarea.input {
   background-color: #fff;
   border: 2px solid #fafafa;
   font-size: 0.95rem;
-  color: #1abc9c;
+  color: var(--clr-primary-10);
   line-height: 1;
   border-radius: 25px;
   outline: none;
@@ -255,7 +255,7 @@ textarea.input {
   opacity: 0;
   transition: 0.3s;
   height: 5px;
-  background-color: #1abc9c;
+  background-color: var(--clr-primary-5);
   top: 50%;
   transform: translateY(-50%);
 }
@@ -287,7 +287,7 @@ textarea.input {
 }
 
 .contact-info .title {
-  color: #1abc9c;
+  color: var(--clr-primary-10);
 }
 
 .text {
@@ -325,7 +325,7 @@ textarea.input {
   width: 35px;
   height: 35px;
   border-radius: 5px;
-  background: linear-gradient(45deg, #1abc9c, #149279);
+  background: linear-gradient(45deg, var(--clr-primary-5), var(--clr-primary-5));
   color: #fff;
   text-align: center;
   line-height: 35px;
@@ -342,7 +342,7 @@ textarea.input {
   position: absolute;
   width: 110px;
   height: 100px;
-  border: 22px solid #1abc9c;
+  border: 22px solid var(--clr-primary-5);
   border-radius: 50%;
   bottom: -77px;
   right: 50px;
