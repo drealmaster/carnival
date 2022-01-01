@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom';
 const Plans = () => {
     const { t, i18n } = useTranslation();
     return (
-        <Wrapper>
+        <Wrapper className='section section-center'>
 <h2 className="heading-primary">our Pricing</h2>
 <div className="plan-section">
 {t('Pricing', {returnObjects: true}).map((pricing) => {
-        const {Plan, Percentage, Duration, Min, Max, selected} = pricing;
-         return (  <div className="plan basic" selected>
+        const {Plan, Percentage, Duration, Min, Max} = pricing;
+         return (  <div className="plan basic">
              <h2 className="plan-heading">{Plan}</h2>
              <h3 className="plan-price"><span className="dollar">{Percentage}</span></h3>
              <ul className="plan-features">
@@ -52,15 +52,19 @@ const Wrapper = styled.section`
   }
   
   .plan-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  
+    display: grid;
+    /* column-gap: 9rem; */
+    row-gap: 3rem;
+
+
+    @media (min-width: 600px) {
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 1rem;
+  }
   }
   
   .plan-section .plan{
-    width: 230px;
+    // width: 230px;
     text-align: center;
     padding: 30px 30px;
     margin-right: 10px;

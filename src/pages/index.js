@@ -6,6 +6,7 @@ import Error from './ErrorPage'
 // import PrivateRoute from './PrivateRoute'
 import Error2 from './Error'
 import Plans from './Plans'
+import HistoryPage from './HistoryPage'
 export {
   Home,
  Plans,
@@ -13,5 +14,5 @@ export {
   Error,
   Products,
   Error2,
-//   PrivateRoute,
+  HistoryPage,
 }

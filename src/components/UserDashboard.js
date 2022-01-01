@@ -13,6 +13,7 @@ doc,
 import { Plans } from '../pages'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
+import Withdrawal from './Withdrawal'
 
 const UserDashboard = () => {
   const { t, i18n } = useTranslation();
@@ -33,6 +34,7 @@ const UserDashboard = () => {
          setPayout(payout)
          console.log(Name);
        })
+
 
 
     // UserColRef.doc(user.uid).get().then(doc => {
@@ -71,7 +73,7 @@ const UserDashboard = () => {
  
 <Plans />
 
-<h3>Deposit Form</h3>
+<h3  className="title">Deposit Form</h3>
 <Form>
   <fieldset>
     <Form.Group className="mb-3">

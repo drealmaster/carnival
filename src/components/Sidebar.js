@@ -38,6 +38,9 @@ const Sidebar = () => {
             <li>
               <Link to='/withdraw' onClick={closeSidebar}>{t("WithdrawLink")}</Link>
             </li>
+            <li>
+              <Link to='/history' onClick={closeSidebar}>{t("HistoryLink")}</Link>
+            </li>
             </>
           )}
         </ul>

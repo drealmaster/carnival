@@ -14,6 +14,7 @@
     "SupportText": "我们的支持团队随时准备响应您可能遇到的任何问题。",
     "DashboardLink": "仪表板",
     "WithdrawLink": "提取",
+    "HistoryLink": "历史",
     "History":  "历史",
     "Login": "登录",
     "Logout": "登出",
@@ -43,6 +44,11 @@
         "id": 3,
         "text": "服务",
         "url": "/services"
+      },
+      {
+        "id": 4,
+        "text": "计划",
+        "url": "/plans"
       }
     
     ],

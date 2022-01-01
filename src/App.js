@@ -9,7 +9,8 @@ import {
   Error,
   About,
   Products,
-  Plans
+  Plans,
+  HistoryPage
 } from "./pages";
 import UserDashboard from "./components/UserDashboard";
 import Withdrawal from "./components/Withdrawal";
@@ -34,6 +35,7 @@ function App() {
 <Route exact path="/checkout" element={<AppCreditCard />} />
 <Route exact path="system-error" element={<Error2 />} />
 <Route exact path="withdraw" element={<Withdrawal />} />
+<Route exact path="History" element={<HistoryPage />} />
      </>}
         <Route exact path="login" element={<AppLoginLogout />} />
         <Route exact path="services" element={<Products />} />

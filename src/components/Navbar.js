@@ -39,6 +39,9 @@ const Nav = ({onChange}) => {
             <li>
               <Link to='/withdraw'>{t("WithdrawLink")}</Link>
             </li>
+            <li>
+              <Link to='/history'>{t("HistoryLink")}</Link>
+            </li>
             </>
           )}
         </ul>
