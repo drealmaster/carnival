@@ -8,22 +8,19 @@ import { auth } from "../firebase"
 import {
    signOut,
 } from "firebase/auth";
+import { useTranslation } from 'react-i18next'
+
 const CartButton = () => {
   const { closeSidebar } = useProductsContext()
   const { user } = useAuth()
   const navigate = useNavigate();
-
+  const { t, i18n } = useTranslation();
   const logout = async () => {
     await signOut(auth);
   };
 
   return (
     <Wrapper className='cart-btn-wrapper'>
-      {/* <Link to='/login'>
-        <button type='button' className='auth-btn' onClick={closeSidebar} >
-            Login <FaUserPlus />
-          </button>
-        </Link> */}
        {user ? (
           <button
           type='button'
@@ -34,13 +31,13 @@ const CartButton = () => {
             logout()
           }}
         >
-          Logout <FaUserMinus />
+          {t("Logout")} <FaUserMinus />
         </button>
        
       ) : (
         <Link to='/login'>
         <button type='button' className='btn2' onClick={closeSidebar} >
-            Login <FaUserPlus />
+         {t("Login")} <FaUserPlus />
           </button>
         </Link>
       )} 

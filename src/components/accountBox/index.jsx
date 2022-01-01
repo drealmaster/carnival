@@ -37,12 +37,6 @@ const BackDrop = styled(motion.div)`
   transform: rotate(60deg);
   top: -290px;
   left: -70px;
-  /* background: rgb(241, 196, 15);
-  background: linear-gradient(
-    58deg,
-    rgba(241, 196, 15, 1) 20%,
-    rgba(243, 172, 18, 1) 100%
-  ); */
   background: var(--clr-grey-10)
 `;
 
@@ -56,13 +50,13 @@ const HeaderText = styled.h2`
   font-size: 30px;
   font-weight: 600;
   line-height: 1.24;
-  color: rgb(241, 196, 15);
+  color: var(--clr-primary-5);
   z-index: 10;
   margin: 0;
 `;
 
 const SmallText = styled.h5`
-  color: rgb(241, 196, 15);
+  color: var(--clr-primary-5);
   font-weight: 500;
   font-size: 11px;
   z-index: 10;

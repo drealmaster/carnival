@@ -2,20 +2,15 @@ import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 import { useProductsContext } from '../context/products_context'
 import { FaTimes } from 'react-icons/fa'
-import { links } from '../utils/constants'
+import { useTranslation } from 'react-i18next'
 import styled from 'styled-components'
 import CartButtons from './CartButtons'
-// import { useUserContext } from '../context/user_context'
+
 import { useAuth } from '../context/AuthContext'
 
 const Sidebar = () => {
    const { isSidebarOpen, closeSidebar } = useProductsContext()
-  // const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-
- 
-  // const closeSidebar = () => {
-  //   setIsSidebarOpen(false);
-  // };
+   const { t, i18n } = useTranslation();
   const { user } = useAuth()
   return (
     <SidebarContainer>
@@ -29,42 +24,24 @@ const Sidebar = () => {
           </button>
         </div>
         <ul className='links'>
-          {links.map(({ id, text, url }) => {
-            return (
-              <li key={id}>
-                <Link to={url} onClick={closeSidebar}>
-                  {text}
-                </Link>
-              </li>
-            )
-          })}
+        {t('links', {returnObjects: true}).map((link) => {
+          const { id, text, url } = link
+          return ( <li key={id}>
+          <Link to={url} onClick={closeSidebar}>{text}</Link>
+        </li>)
+        })}
            {user && (
              <>
             <li>
-              <Link to='/dashboard' onClick={closeSidebar}>
-                Dashboard
-              </Link>
+              <Link to='/dashboard' onClick={closeSidebar}>{t("DashboardLink")}</Link>
             </li>
             <li>
-              <Link to='/withdraw' onClick={closeSidebar}>
-                withdraw
-              </Link>
+              <Link to='/withdraw' onClick={closeSidebar}>{t("WithdrawLink")}</Link>
             </li>
             </>
-          )} 
-
-{/* <li>
-              <Link to='/checkout'>
-                Dashboard
-              </Link>
-            </li>
-            <li>
-              <Link to='/checkout'>
-                Investment Plans
-              </Link>
-            </li> */}
+          )}
         </ul>
-        <CartButtons />
+        <CartButtons /> 
       </aside>
     </SidebarContainer>
   )

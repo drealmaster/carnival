@@ -8,9 +8,14 @@ collection,
 getDoc,
 doc,
   } from 'firebase/firestore'
+  import { useTranslation } from 'react-i18next'
   import { Link } from 'react-router-dom'
+import { Plans } from '../pages'
+import Form from 'react-bootstrap/Form'
+import Button from 'react-bootstrap/Button'
 
 const UserDashboard = () => {
+  const { t, i18n } = useTranslation();
   const { user } = useAuth()
     const UserColRef = doc(db, 'users', user.uid)
     const [Name, setName] = useState('')
@@ -61,17 +66,50 @@ const UserDashboard = () => {
 <h5>Total Payouts</h5>
     <p>$ {Payout}</p>
        </div>
+
         </div>
+ 
+<Plans />
 
-{/* <div className="plans">
-<h4>View our Investment plans to get started</h4>
-       <Link to='/services' className='btn'>
-         Continue
-        </Link>
-</div> */}
+<h3>Deposit Form</h3>
+<Form>
+  <fieldset>
+    <Form.Group className="mb-3">
+      <Form.Label htmlFor="disabledTextInput">Amount($)</Form.Label>
+      <Form.Control type='number' placeholder="200" />
+    </Form.Group>
+    <Form.Group className="mb-3">
+      <Form.Label htmlFor="disabledTextInput">Account Balance</Form.Label>
+      <Form.Control disabled type='number' placeholder={Deposit} />
+    </Form.Group>
+    <Form.Group className="mb-3">
+      <Form.Label htmlFor="disabledSelect">Plan</Form.Label>
+      <Form.Select>
+      {t('Pricing', {returnObjects: true}).map((pricing) => {
+        const {Plan} = pricing;
+         return ( 
+          <option>{Plan}</option>
+         )
+})}
+      </Form.Select>
+    </Form.Group>
 
-<FeaturedProducts />
-      
+    <Form.Group className="mb-3">
+      <Form.Label htmlFor="disabledSelect">Service</Form.Label>
+      <Form.Select id="disabledSelect">
+        <option>Forex</option>
+        <option>CBD</option>
+        <option>Real Estate</option>
+      </Form.Select>
+    </Form.Group>
+
+    
+    <Button className='btn3' type="submit">Deposit</Button>
+  </fieldset>
+</Form>
+
+
+
       </Wrapper>
     )
 }
@@ -95,6 +133,14 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(81,106,166,1) 81%, rg
     box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 
+.btn3{
+  display: block;
+  background-color: #696fdd;
+  padding: 10px;
+  margin-top: 20px;
+  color: #f6f6fe;
+  border-radius: 5px;
+}
 .plans{
   text-align: center;
   margin-top: 3rem;

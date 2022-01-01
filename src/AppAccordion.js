@@ -2,63 +2,28 @@ import React from 'react'
 import AccordionWrapper from './components/AccordionWrapper'; 
 import AccordionItem from './components/AccordionItem';
 import styled from 'styled-components'
-// import plus from '../src/assets/plus.svg'
+import { useTranslation } from 'react-i18next'
 
 
 function App() {
-
-  const data = [
-    {
-      "title": "Who we are",
-      "description": "Carnival Forex is an online investment platform specialized in trading the financial markets. Our objective is to trade and manage our clients’ portfolio and earn them profits."
-    },
-     {
-      "title": "What is the minimum amount of money I can invest?",
-      "description": "At Carnival Forex, we are able to offer competitive minimums for our investments. For Carnival investments that are part of our short term note programs, the minimum you can invest in a deal is $500. For Carnival Forex investment, investment minimums vary per deal. It’s worth noting that, historically, deals on Carnival Forex start at $5,000 or greater. Please see the individual deal page to verify the minimum investment amount required to take part in a deal before you decide to invest. Lastly, if you are investing with an IRA via a custodian, the minimum you can invest in a deal is $2,500."
-    },
-     {
-      "title": "How secure are my funds if the market Crash?",
-      "description": "There are money-back guarantees depending on the plan you subscribe for. We have a risk management department that keeps your investment protected."
-    },
-    {
-      "title": "How long does it take for my deposits to be added to my account?",
-      "description": "Your account will be updated once the deposit transaction is confirmed, this usually takes about 5minutes."
-    },
-    {
-      "title": "How do I invest?",
-      "description": "To make an investment you have to create an account either as a private or institutional investor. Once you are signed up, choose an investment plan that suits you and proceed to make a deposit. All deposits must be made through the Investor portfolio area."
-    },
-    {
-      "title": "How is profit calculated?",
-      "description": "All profits are calculated in Bitcoin, which means Carnival's Forex objective is to increase your Bitcoin holdings."
-    },
-     {
-      "title": "Are my deposits insured by FDIC?",
-      "description": "Yes, your funds are held at Signature Bank, an FDIC-insured bank. Funds deposited with Carnival Forex are insured up to $250,000, the maximum amount allowed by law. Please note that if you have additional accounts at Signature Bank, your funds will be covered up to $250,000 for all insured deposits that are maintained with Signature Bank."
-    },
-     {
-      "title": "How can I withdraw funds?",
-      "description": "Login to your account using your username and password and check the withdraw section."
-    },
-    {
-      "title": "What is the withdrawal process time?",
-      "description": "After you have submitted a withdrawal, it will take 24h for the fund to liquidate your positions and send you your BTC."
-    },
-   
-  ];
+  const { t, i18n } = useTranslation();
 
   return (
     <Wrapper>
      <div className="App">
       <div className="content">
         <div className="app-description">
-          <h1>FAQ</h1>
-          <p>Some common questions that are asked </p>
+          <h1>{t("FAQ")}</h1>
+          <p>{t("FAQDesc")}</p>
         </div>
           <AccordionWrapper>
-            {data.map((item, index) => (
+            {/* {Accordion.map((item, index) => (
               <AccordionItem key={index} index={index} title={item.title} description={item.description} />
-            ))}
+            ))} */}
+
+{t('Accordion', {returnObjects: true}).map((Accordion, index) => {
+          return <AccordionItem key={index} index={index} title={Accordion.title} description={Accordion.description}  />
+        })}
           </AccordionWrapper>
       </div>
     </div> 

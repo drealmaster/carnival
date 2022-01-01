@@ -3,19 +3,26 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import heroBcg from '../assets/image1.jpg'
 import heroBcg2 from '../assets/image4.jpg'
+import { useTranslation } from 'react-i18next'
 const Hero = () => {
+
+  const { t, i18n } = useTranslation();
   return (
     <Wrapper className='section-center'>
       <article className='content'>
         <h1>
-          Invest for the <br />
-          future
+         {t("IntroHeader")} 
+         
+         {/* Invest for the <br />
+          future */}
         </h1>
         <p>
-          If you're looking for an investment firm to provide disciplined investing strategies, offer straightforward market perspective and help you navigate market volatility, then you have come to the right place.
+          {t("IntroText")}
+          {/* If you're looking for an investment firm to provide disciplined investing strategies, offer straightforward market perspective and help you navigate market volatility, then you have come to the right place. */}
         </p>
         <Link to='/services' className='btn hero-btn'>
-         Learn More
+         {t("IntroBtn")}
+         {/* Learn More */}
         </Link>
       </article>
       <article className='img-container'>

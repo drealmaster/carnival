@@ -1,0 +1,216 @@
+{
+    "IntroHeader": "为未来投资",
+    "IntroText": "如果您正在寻找一家投资公司来提供严格的投资策略、提供直接的市场观点并帮助您应对市场波动，那么您来对地方了。",
+    "IntroBtn": "学到更多",
+    "PerksHeader": "您享受的特权。",
+    "PerksSub": "我们建立了一个强大的系统来帮助您管理和大大增加您的收入",
+    "Security": "安全",
+    "SecurityText": "所有投资均由持牌证券托管人安全保管，以保护所有投资。 我们受到证券交易委员会的保护。",
+    "EasyAccess": "容易接近",
+    "EasyText": "我们对投资选择并不严格。 无论您与谁合作，您都可以访问我们的产品。",
+    "Withdrawal": "轻松提款",
+    "WithdrawalText": "提供您的加密详细信息，输入您希望提取的金额，并确认您的交易以提取您的资金。",
+    "Support": "优秀的支持",
+    "SupportText": "我们的支持团队随时准备响应您可能遇到的任何问题。",
+    "DashboardLink": "仪表板",
+    "WithdrawLink": "提取",
+    "History":  "历史",
+    "Login": "登录",
+    "Logout": "登出",
+    "GetStarted": "开始",
+    "SeeMore": "查看更多",
+    "InvestmentPlans": "投资计划",
+    "ReviewHeader": "评论",
+    "About1": "Carnival Forex Investments 是一个独立的投资平台，目前为世界各地的个人、家庭和机构管理 1.89 亿美元。 40 多年来，我们一直在帮助客户实现他们的财务目标。 Carnival Forex Investments 作为机构资金经理，为个人提供相同的机构级专业知识。 这意味着您将获得严格的投资策略以及我们独特的高接触客户服务。 我们欢迎有机会更多地了解您的情况并共同发现我们是否适合您。",
+    "About2": "在 Carnival Forex Investments，我们努力提供高接触服务和教育，以便我们的客户充分了解他们的投资策略，并能够坚持下去，尽管有其他诱惑。 我们这样做的主要方式是为您提供一名专门的投资顾问，除其他外，他将回答有关您的嘉年华外汇投资组合以及您正在考虑的其他投资顾问或产品的问题。",
+    "OurStory": "我们的故事",
+    "FAQ": "经常问的问题",
+    "FAQDesc": "一些常见问题",
+    "Minimum" : "最低限度",
+    "Maximum" : "最大限度",
+    "links" : [
+      {
+        "id": 1,
+        "text": "家",
+        "url": "/"
+      },
+      {
+        "id": 2,
+        "text": "关于",
+        "url": "/about"
+      },
+      {
+        "id": 3,
+        "text": "服务",
+        "url": "/services"
+      }
+    
+    ],
+
+    "Featured": [
+      {
+          "id": 1,
+          "image": "https://res.cloudinary.com/masterokere/image/upload/v1640950343/Bitcoin2_oil0qu.jpg",
+          "name": "加密货币",
+          "desc": "如果您相信区块链技术，那么加密货币是您应该投资的一项伟大投资。嘉年华外汇将比特币视为一种价值储存手段，并坚信比特币在未来可以取代黄金。"
+      },
+      {
+          "id": 2,
+          "image": "https://res.cloudinary.com/masterokere/image/upload/v1640950338/Weed2_bpa3dn.jpg",
+          "name": "CBD投资",
+          "desc": "大麻是世界上最常种植、贩运和使用的毒品； 随着国内外对合法化的推动，大麻正引起像您这样的投资者、制造商和研究人员的极大关注。"
+      },
+      {
+          "id": 3,
+          "image": "https://res.cloudinary.com/masterokere/image/upload/v1640950336/IRA2_lwtzuo.jpg",
+          "name": "个人退休账户",
+          "desc": "个人退休账户是在金融机构开设的账户，允许个人以免税增长或延税方式为退休储蓄。 无论您选择传统还是同时选择个人退休账户，税收优惠都可以让您的储蓄比应税账户更快地增长或复合。"
+      },
+      {
+          "id": 4,
+          "image": "https://res.cloudinary.com/masterokere/image/upload/v1640950344/Bonds_fgksse.jpg",
+          "name": "国债基金",
+          "desc": "政府债券基金是投资于美国政府及其机构发行的债务证券的共同基金或 ETF。 这些基金投资于债务工具，如国债、国债、国债和由政府资助的企业（如房利美和房地美）发行的抵押贷款支持证券。 这些政府债券基金非常适合低风险投资者。 这些基金对于新手投资者和寻求现金的投资者来说也是不错的选择。"
+      },
+      {
+          "id": 5,
+          "image": "https://res.cloudinary.com/masterokere/image/upload/v1640950347/forex_gsrrxr.jpg",
+          "name": "外汇投资",
+          "desc": "外汇是一个需要较少资源即可开始的市场，并且在时间方面也提供了高度的灵活性。 这使得外汇市场成为专业人士和新手最合适的选择。"
+      },
+      {
+          "id": 6,
+          "image": "https://res.cloudinary.com/masterokere/image/upload/v1640950329/NFT_rlowxk.jpg",
+          "name": "NFT",
+          "desc": "NFT 是数字资产，可作为所有权的安全文件，对收藏家来说是一项值得的投资。 随着其他数字资产价格飞涨，艺术家、收藏家和投机者纷纷涌入这场运动。"
+      },
+      {
+          "id": 7,
+          "image": "https://res.cloudinary.com/masterokere/image/upload/v1640950333/Real2_ezxjav.jpg",
+          "name": "房地产",
+          "desc": "购买和拥有房地产是一种既令人满意又有利可图的投资策略。 房地产投资信托 (REIT) 最适合希望在没有传统房地产交易的情况下投资房地产的投资者。"
+      }
+  ],
+
+  "people" : [
+    {
+      "id": 1,
+      "image": "https://res.cloudinary.com/masterokere/image/upload/v1640971980/Woman_xuedgp.jpg",
+      "name": "Maria",
+      "title": "顾问",
+      "quote": "由于嘉年华外汇投资，我能够支付我的学生贷款。"
+    },
+    {
+        "id": 2,
+        "image": "https://res.cloudinary.com/masterokere/image/upload/v1640950340/Youngman_vkxlhz.jpg",
+        "name": "John",
+        "title": "学生",
+        "quote": "永远的外汇狂欢！"
+      },
+      {
+        "id": 3,
+        "image": "https://res.cloudinary.com/masterokere/image/upload/v1640950331/Oldman_utafdx.jpg",
+        "name": "Peter",
+        "title": "销售人员",
+        "quote": "从我的投资利润中得到了我梦想中的房子和妻子"
+      },
+      {
+        "id": 4,
+        "image": "https://res.cloudinary.com/masterokere/image/upload/v1640950349/WorkingWoman_c7y9nv.jpg",
+        "name": "Susan",
+        "title": "银行经理",
+        "quote": "我词穷。 我强烈推荐嘉年华外汇，他们是最好的"
+      }
+  ],
+
+
+  "Accordion" : [
+    {
+      "title": "我们是谁",
+      "description": "Carnival Forex 是一个专门从事金融市场交易的在线投资平台。 我们的目标是交易和管理客户的投资组合并为他们赚取利润。"
+    },
+     {
+      "title": "我可以投资的最低金额是多少？",
+      "description": "在嘉年华外汇，我们能够为我们的投资提供具有竞争力的最低限额。 对于属于我们短期票据计划一部分的嘉年华投资，您可以投资的最低交易金额为 500 美元。 对于嘉年华外汇投资，每笔交易的最低投资额不同。 值得注意的是，从历史上看，嘉年华外汇交易的起价为 5,000 美元或更高。 在您决定投资之前，请查看个人交易页面以确认参与交易所需的最低投资金额。 最后，如果您通过托管人向 IRA 投资，您可以投资的最低金额为 2,500 美元。"
+    },
+     {
+      "title": "如果市场崩盘，我的资金有多安全？",
+      "description": "根据您订阅的计划，有退款保证。 我们有一个风险管理部门来保护您的投资。"
+    },
+    {
+      "title": "我的存款需要多长时间才能存入我的账户？",
+      "description": "您的帐户将在存款交易确认后更新，这通常需要大约 5 分钟。"
+    },
+    {
+      "title": "我如何投资？",
+      "description": "要进行投资，您必须以私人或机构投资者的身份创建一个帐户。 注册后，选择适合您的投资计划并进行存款。 所有存款必须通过投资者投资组合区域进行。"
+    },
+    {
+      "title": "利润是如何计算的？",
+      "description": "所有利润均以比特币计算，这意味着嘉年华的外汇目标是增加您的比特币持有量。"
+    },
+     {
+      "title": "我的存款是否由 FDIC 投保？",
+      "description": "是的，您的资金存放在 FDIC 保险银行 Signature Bank。 存入 Carnival Forex 的资金最高可投保 250,000 美元，这是法律允许的最高金额。 请注意，如果您在 Signature 银行拥有其他账户，则您在 Signature 银行保管的所有保险存款的资金最高可达 250,000 美元。"
+    },
+     {
+      "title": "如何提取资金？",
+      "description": "使用您的用户名和密码登录您的帐户并检查提款部分。"
+    },
+    {
+      "title": "提款处理时间是多少？",
+      "description": "在您提交提款后，该基金需要 24 小时来清算您的头寸并向您发送比特币。"
+    }
+   
+  ],
+
+  
+  "Pricing" : [
+    {
+        "Plan": "基本的",
+        "Percentage": "10%",
+        "Duration" : "24 小时后",
+        "Min" : "$200",
+        "Max" : "$500"
+    },
+    {
+        "Plan": "标准",
+        "Percentage": "20%",
+        "Duration" : "24 小时后",
+        "Min" : "$399",
+        "Max" : "$5,000"
+    },
+    {
+        "Plan": "专业的",
+        "Percentage": "100%",
+        "Duration" : "24 小时后",
+        "Min" : "$2,999",
+        "Max" : "$10,000"
+    },
+    {
+        "Plan": "金子",
+        "Percentage": "100%",
+        "Duration" : "  48 小时后",
+        "Min" : "$4,999",
+        "Max" : "$15,000"
+    },
+    {
+        "Plan": "优质的",
+        "Percentage": "100%",
+        "Duration" : "48 小时后",
+        "Min" : "$14,999",
+        "Max" : "$30,000"
+    },
+    {
+        "Plan": "精英",
+        "Percentage": "100%",
+        "Duration" : "72 小时后",
+        "Min" : "$29,999",
+        "Max" : "UNLIMITED"
+    }
+  ],
+
+
+  "ServicesHeader":"一系列产品只为您",
+  "ServicesDesc": "轻松选择您喜欢的产品组合。 无需文书工作，无需银行排队，无需经纪人。"
+ }

@@ -4,18 +4,20 @@ import styled from 'styled-components'
 import Product from '../components/Product'
 import {featured} from '../utils/constants'
 import { Footer } from '../components'
+import { useTranslation } from 'react-i18next'
 
 const ProductsPage = () => {
+  const { t, i18n } = useTranslation();
   return (
     <>
     <Wrapper className='section'>
       <div className='title'>
-        <h2>An Array of Products just for you</h2>
-        <p className='desc'>Choose your preferred product mix without stress. No paperwork, no bank queues, no broker required.</p>
+        <h2>{t("ServicesHeader")}</h2>
+        <p className='desc'>{t("ServicesDesc")}</p>
       </div>
       <div className='section-center featured'>
-        {featured.map((product) => {
-          return <Product key={product.id} {...product} />
+      {t('Featured', {returnObjects: true}).map((product) => {
+          return <Product key={t(product.id)} {...product} />
         })}
       </div> 
     </Wrapper>

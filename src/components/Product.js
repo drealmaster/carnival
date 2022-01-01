@@ -1,40 +1,27 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import { useAuth } from '../context/AuthContext'
+
+import { useTranslation } from 'react-i18next'
 const Product = ({desc, image, name, price, id }) => {
-  const { user } = useAuth()
+  const { t, i18n } = useTranslation();
   return (
+  
     <Wrapper>
       <div className='container'>
         <img src={image} alt={name} />
-        {/* <Link to={`/products/${id}`} className='link'>
-          <FaSearch />
-        </Link> */}
       </div>
       <footer>
         <h2>{name}</h2>
-        <h4> Minimum: ${price}</h4>
   <p>{desc}</p>
-        {user ? (
-         <Link to='/checkout' className='button'>
-         Invest now
-        </Link>
-       
-      ) : (
         <Link to='/login' className='button'>
-         Get Started
+        {t("GetStarted")}
         </Link>
-      )} 
       </footer>
     </Wrapper>
   )
 }
 const Wrapper = styled.article`
-  /* .container {
-    background: var(--clr-black);
-    border-radius: var(--radius);
-  } */
   img {
     width: 100% !important;
     display: block !important;

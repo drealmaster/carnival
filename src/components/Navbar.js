@@ -3,12 +3,14 @@ import styled from 'styled-components'
 // import logo from '../assets/logo.svg'
 import { FaBars } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
-import { links } from '../utils/constants'
+import { useTranslation } from 'react-i18next'
 import CartButtons from './CartButtons'
 import { useProductsContext } from '../context/products_context'
 import { useAuth } from '../context/AuthContext'
-const Nav = () => {
+
+const Nav = ({onChange}) => {
   const {openSidebar}  = useProductsContext()
+  const { t, i18n } = useTranslation();
   const { user } = useAuth()
   return (
     <NavContainer>
@@ -22,26 +24,29 @@ const Nav = () => {
           </button>
         </div>
         <ul className='nav-links'>
-          {links.map((link) => {
-            const { id, text, url } = link
-            return (
-              <li key={id}>
-                <Link to={url}>{text}</Link>
-              </li>
-            )
-          })}
+
+        {t('links', {returnObjects: true}).map((link) => {
+          const { id, text, url } = link
+          return ( <li key={id}>
+          <Link to={url}>{text}</Link>
+        </li>)
+        })}
            {user && (
              <>
             <li>
-              <Link to='/dashboard'>dashboard</Link>
+              <Link to='/dashboard'>{t("DashboardLink")}</Link>
             </li>
             <li>
-              <Link to='/withdraw'>withdraw</Link>
+              <Link to='/withdraw'>{t("WithdrawLink")}</Link>
             </li>
             </>
           )}
         </ul>
         <CartButtons />
+        <select name="language" onChange={onChange}>
+            <option value="en">English</option>
+            <option value="ch">Chinese</option>
+          </select>
       </div>
     </NavContainer>
   )

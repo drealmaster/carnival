@@ -2,11 +2,22 @@ import React, { useState, useEffect } from 'react';
 import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
 import { FaQuoteRight } from 'react-icons/fa';
 import styled from 'styled-components'
-import data from '../utils/constants';
+import { useTranslation } from 'react-i18next'
 const Testimonials = () => {
-    const [people, setPeople] = useState(data);
+  const { t, i18n } = useTranslation();
+    const [people, setPeople] = useState([]);
     const [index, setIndex] = React.useState(0);
-  
+
+
+    useEffect(() => {
+        
+   const time = t('people', {returnObjects: true})
+ setPeople(time)
+   console.log(time);
+     
+    }, [])
+
+
     useEffect(() => {
       const lastIndex = people.length - 1;
       if (index < 0) {
@@ -30,7 +41,7 @@ const Testimonials = () => {
       <Wrapper className='section'>
         <div className='title'>
           <h2>
-            reviews
+            {t("ReviewHeader")}
           </h2>
         </div>
         <div className='section-center'>

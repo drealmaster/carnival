@@ -1,12 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
+import { useTranslation } from 'react-i18next'
 
 const PerksList = ({image, title, description}) => {
+
+    const { t, i18n } = useTranslation();
     return (
         <Wrapper >
                     <img class="content" src={image} alt={title}/>
-                    <h4 className='text-center'>{title}</h4>
-                    <p className='text-center'>{description}</p>
+                    <h4 className='text-center'>{t("title")}</h4>
+                    <p className='text-center'>{t("SecurityText")}</p>
                 </Wrapper>
     )
 }

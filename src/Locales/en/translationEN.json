@@ -1,0 +1,219 @@
+{
+    "IntroHeader": "Invest For The Future",
+    "IntroText": "If you're looking for an investment firm to provide disciplined investing strategies, offer straightforward market perspective and help you navigate market volatility, then you have come to the right place.",
+    "IntroBtn": "Learn More",
+    "PerksHeader": "Perks You Enjoy.",
+    "PerksSub": "We have built a robust system to help you manage and increase your income greatly",
+    "Security": "Security",
+    "SecurityText": "All investments are held in safe custody by a licensed securities custodian which protects all investments. We are protected by the Securities & Exchange Commission.",
+    "EasyAccess": "Easy Access",
+    "EasyText": "We aren’t rigid with our investment options. It doesn’t matter who you bank with, you can access our product offerings.",
+    "Withdrawal": "Easy Withdrawal",
+    "WithdrawalText": "Supply your crypto details, enter an amount you wish to withdraw, and confirm your transaction to withdraw your money.",
+    "Support": "Excellent Support",
+    "SupportText": "Our support team is always ready to respond to whatever concerns you may have.",
+    "DashboardLink": "Dashboard",
+    "WithdrawLink": "Withdraw",
+    "History":  "History",
+    "Login": "Login",
+    "Logout": "Logout",
+    "GetStarted": "Get started",
+    "SeeMore": "See More",
+    "InvestmentPlans": "Investment Plans",
+    "ReviewHeader": "reviews",
+    "About1": "Carnival Forex Investments is an independent investment platform currently managing $189 million for individuals, families and institutions around the world. For over 40 years, we've helped clients work toward their financial goals. With roots as an institutional money manager, Carnival Forex Investments provides the same institutional-caliber expertise to individuals. This means you get a disciplined investment strategy along with our unique, high-touch client service. We welcome the opportunity to learn more about your situation and mutually discover if we could be a fit for you.",
+    "About2": " At Carnival Forex Investments, we strive to provide high-touch service and education so that our clients fully understand their investment strategies and are able to stick with them despite temptation to do otherwise. A primary way we do this is by providing you a dedicated Investment Counselor who, among other things, will answer questions about your Carnival Forex portfolio and on other investment advisers or products you are considering.",
+    "OurStory" : "Our Story",
+    "FAQ": "FAQ",
+    "FAQDesc": "Some common questions that are asked ",
+    "Minimum" : "Minimum",
+    "Maximum" : "Maximum",
+    "links" : [
+        {
+          "id": 1,
+          "text": "home",
+          "url": "/"
+        },
+        {
+          "id": 2,
+          "text": "about",
+          "url": "/about"
+        },
+        {
+          "id": 3,
+          "text": "services",
+          "url": "/services"
+        }
+      
+      ],
+      
+    "Featured": [
+        {
+            "id": 1,
+            "image": "https://res.cloudinary.com/masterokere/image/upload/v1640950343/Bitcoin2_oil0qu.jpg",
+            "name": "Crypto Currency",
+            "desc": "If you believe in blockchain technology, Cryptocurrency is a great investment that you should invest in. Carnival Forex sees Bitcoin as a store of value, and strongly believe Bitcoin can replace gold in the future."
+        },
+        {
+            "id": 2,
+            "image": "https://res.cloudinary.com/masterokere/image/upload/v1640950338/Weed2_bpa3dn.jpg",
+            "name": "CBD Investment",
+            "desc": "Marijuana is the world's most commonly cultivated, trafficked, and used drug; as the push for legalization at home and abroad grows, marijuana is garnering significant attention from investors like you, manufacturers, and researchers."
+        },
+        {
+            "id": 3,
+            "image": "https://res.cloudinary.com/masterokere/image/upload/v1640950336/IRA2_lwtzuo.jpg",
+            "name": "Individual Retirement Account",
+            "desc": "An Individual Retirement Account is an account set up at a financial institution that allows an individual to save for retirement with tax-free growth or on a tax-deferred basis. Whether you choose a traditional or Roth IRA, the tax benefits allow your savings to potentially grow, or compound, more quickly than in a taxable account."
+        },
+        {
+            "id": 4,
+            "image": "https://res.cloudinary.com/masterokere/image/upload/v1640950344/Bonds_fgksse.jpg",
+            "name": "Government bond funds",
+            "desc": "Government bond funds are mutual funds or ETFs that invest in debt securities issued by the U.S. government and its agencies. The funds invest in debt instruments such as T-bills, T-notes, T-bonds and mortgage-backed securities issued by government-sponsored enterprises such as Fannie Mae and Freddie Mac. These government bond funds are well-suited for the low-risk investor. These funds can also be a good choice for beginning investors and those looking for cash."
+        },
+        {
+            "id": 5,
+            "image": "https://res.cloudinary.com/masterokere/image/upload/v1640950347/forex_gsrrxr.jpg",
+            "name": "Forex Investment",
+            "desc": "Forex is a market that requires fewer resources to get started, and it also offers high flexibility in terms of time. This makes forex market the most suitable choice for pros and novices alike. Carnival Forex investment offers 200% return on all investments."
+          },
+          
+          {
+            "id": 6,
+            "image": "https://res.cloudinary.com/masterokere/image/upload/v1640950329/NFT_rlowxk.jpg",
+            "name": "NFT",
+            "desc": "NFTs are digital assets that act as secure documentation of ownership and can be a worthwhile investment for collectors. Artists, collectors, and speculators alike have flocked to the movement  as other digital assets have skyrocketed in price."
+          },
+        {
+            "id": 7,
+            "image": "https://res.cloudinary.com/masterokere/image/upload/v1640950333/Real2_ezxjav.jpg",
+            "name": "Real Estate",
+            "desc": "Buying and owning real estate is an investment strategy that can be both satisfying and lucrative. A real estate investment trust (REIT) is best for investors who want portfolio exposure to real estate without a traditional real estate transaction."
+        }
+    ],
+
+
+    "people" : [
+        {
+          "id": 1,
+          "image": "https://res.cloudinary.com/masterokere/image/upload/v1640971980/Woman_xuedgp.jpg",
+          "name": "Maria",
+          "title": "Counselor",
+          "quote": "I was able to payout my student loans all thanks to Carnival Forex Investments."
+        },
+        {
+            "id": 2,
+            "image": "https://res.cloudinary.com/masterokere/image/upload/v1640950340/Youngman_vkxlhz.jpg",
+            "name": "John",
+            "title": "Student",
+            "quote": "CarnivalForex Forever!"
+          },
+          {
+            "id": 3,
+            "image": "https://res.cloudinary.com/masterokere/image/upload/v1640950331/Oldman_utafdx.jpg",
+            "name": "Peter",
+            "title": "Sales Personal",
+            "quote": "Got my dream house and wife from my investment profits"
+          },
+          {
+            "id": 4,
+            "image": "https://res.cloudinary.com/masterokere/image/upload/v1640950349/WorkingWoman_c7y9nv.jpg",
+            "name": "Susan",
+            "title": "Bank Manager",
+            "quote": "I am short of words. I highly recommend Carnival Forex, they are the best"
+          }
+      ],
+
+
+      "Accordion" : [
+        {
+          "title": "Who we are",
+          "description": "Carnival Forex is an online investment platform specialized in trading the financial markets. Our objective is to trade and manage our clients’ portfolio and earn them profits."
+        },
+         {
+          "title": "What is the minimum amount of money I can invest?",
+          "description": "At Carnival Forex, we are able to offer competitive minimums for our investments. For Carnival investments that are part of our short term note programs, the minimum you can invest in a deal is $500. For Carnival Forex investment, investment minimums vary per deal. It’s worth noting that, historically, deals on Carnival Forex start at $5,000 or greater. Please see the individual deal page to verify the minimum investment amount required to take part in a deal before you decide to invest. Lastly, if you are investing with an IRA via a custodian, the minimum you can invest in a deal is $2,500."
+        },
+         {
+          "title": "How secure are my funds if the market Crash?",
+          "description": "There are money-back guarantees depending on the plan you subscribe for. We have a risk management department that keeps your investment protected."
+        },
+        {
+          "title": "How long does it take for my deposits to be added to my account?",
+          "description": "Your account will be updated once the deposit transaction is confirmed, this usually takes about 5minutes."
+        },
+        {
+          "title": "How do I invest?",
+          "description": "To make an investment you have to create an account either as a private or institutional investor. Once you are signed up, choose an investment plan that suits you and proceed to make a deposit. All deposits must be made through the Investor portfolio area."
+        },
+        {
+          "title": "How is profit calculated?",
+          "description": "All profits are calculated in Bitcoin, which means Carnival's Forex objective is to increase your Bitcoin holdings."
+        },
+         {
+          "title": "Are my deposits insured by FDIC?",
+          "description": "Yes, your funds are held at Signature Bank, an FDIC-insured bank. Funds deposited with Carnival Forex are insured up to $250,000, the maximum amount allowed by law. Please note that if you have additional accounts at Signature Bank, your funds will be covered up to $250,000 for all insured deposits that are maintained with Signature Bank."
+        },
+         {
+          "title": "How can I withdraw funds?",
+          "description": "Login to your account using your username and password and check the withdraw section."
+        },
+        {
+          "title": "What is the withdrawal process time?",
+          "description": "After you have submitted a withdrawal, it will take 24h for the fund to liquidate your positions and send you your BTC."
+        }
+       
+      ],
+
+
+      "Pricing" : [
+        {
+            "Plan": "Basic",
+            "Percentage": "10%",
+            "Duration" : "After 24 Hours",
+            "Min" : "$200",
+            "Max" : "$500"
+        },
+        {
+            "Plan": "Standard",
+            "Percentage": "20%",
+            "Duration" : "After 24 Hours",
+            "Min" : "$399",
+            "Max" : "$5,000"
+        },
+        {
+            "Plan": "Professional",
+            "Percentage": "100%",
+            "Duration" : "After 24 Hours",
+            "Min" : "$2,999",
+            "Max" : "$10,000"
+        },
+        {
+            "Plan": "Gold",
+            "Percentage": "100%",
+            "Duration" : "  After 48 Hours",
+            "Min" : "$4,999",
+            "Max" : "$15,000"
+        },
+        {
+            "Plan": "Premium",
+            "Percentage": "100%",
+            "Duration" : "After 48 Hours",
+            "Min" : "$14,999",
+            "Max" : "$30,000"
+        },
+        {
+            "Plan": "Elite",
+            "Percentage": "100%",
+            "Duration" : "After 72 Hours",
+            "Min" : "$29,999",
+            "Max" : "UNLIMITED",
+            "selected": "selected"
+        }
+      ],
+      
+
+    "ServicesHeader":"An Array of Products just for you",
+    "ServicesDesc": "Choose your preferred product mix without stress. No paperwork, no bank queues, no broker required."
+}

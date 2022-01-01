@@ -24,8 +24,8 @@ import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/
 import { useAuth } from '../../context/AuthContext'
 
 import { useNavigate } from "react-router-dom"
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+
+
 
 
 
@@ -36,10 +36,8 @@ export function SignupForm(props) {
   const [registerPassword, setRegisterPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [Image, setImage] = useState("")
-  console.log(Image);
   
   const [registerName, setRegisterName] = useState("");
-  const [progress, setprogress] = useState(0)
 
 const storage = getStorage();
 
@@ -48,47 +46,17 @@ const storage = getStorage();
 
       const uploadFile = (file) => {
         if(!file) return;
-
-       
-       
-       
-       
        
        
         const storageRef = ref(storage, `${Image.name}`)
         const uploadTask = uploadBytesResumable(storageRef, file)
-
-        // uploadTask.on("state_changed", (snapshot) => {
-        //   const prog = Math.round((snapshot.bytesTransferred / snapshot.totalBytes) * 100)
-
-
-        //   setprogress(prog)
-        // }, (err) => console.log(err),
-        // () => {
-        //      getDownloadURL(uploadTask.snapshot.ref)
-        //      .then(url => console.log(url))
-        // }
-        
-        // )
 
       }
 
   
 
   const register = async () => {
-  
-    if (registerPassword !== confirmPassword) {
-      toast.succ("password doesnt match!!", {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-      });
-      
-    }
+
 
 
     try {
@@ -122,10 +90,7 @@ const storage = getStorage();
         deposit: 0.00,
         payout: 0.00
       });
-      // const file = e.target[0].files[0]
-// console.log(file);
-//  uploadFile(file)
-
+  
  
       uploadFile(Image)
       navigate('/dashboard');
@@ -163,17 +128,6 @@ const storage = getStorage();
       </FormContainer>
       <Marginer direction="vertical" margin={10} />
       <SubmitButton  onClick={register} type="submit">Signup</SubmitButton>
-      {/* {error ? {error} : ''} */}
-      <ToastContainer 
-      position="top-right"
-      autoClose={5000}
-      hideProgressBar={false}
-      newestOnTop={false}
-      closeOnClick
-      rtl={false}
-      pauseOnFocusLoss
-      draggable
-      pauseOnHover />
       <Marginer direction="vertical" margin="1em" />
       <MutedLink href="#">
         Already have an account?

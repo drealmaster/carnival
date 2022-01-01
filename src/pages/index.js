@@ -5,9 +5,10 @@ import About from './AboutPage'
 import Error from './ErrorPage'
 // import PrivateRoute from './PrivateRoute'
 import Error2 from './Error'
+import Plans from './Plans'
 export {
   Home,
-  // SingleProduct,
+ Plans,
   About,
   Error,
   Products,

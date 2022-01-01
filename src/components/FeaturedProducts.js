@@ -2,22 +2,22 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import Product from './Product'
-import {featured} from '../utils/constants'
 import { FiChevronRight } from 'react-icons/fi';
+import { useTranslation } from 'react-i18next'
 const FeaturedProducts = () => {
-
+  const { t, i18n } = useTranslation();
   return (
     <Wrapper className='section'>
       <div className='title'>
-        <h2>Investment Plans</h2>
+        <h2>{t("InvestmentPlans")}</h2>
       </div>
       <div className='section-center featured'>
-        {featured.slice(0, 3).map((product) => {
-          return <Product key={product.id} {...product} />
+        {t('Featured', {returnObjects: true}).slice(0,3).map((product) => {
+          return <Product key={t(product.id)} {...product} />
         })}
       </div>
       <Link to='/services' className='btn'>
-        See more <FiChevronRight />
+        {t("SeeMore")}<FiChevronRight />
       </Link>
     </Wrapper>
   )
