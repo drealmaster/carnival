@@ -100,6 +100,7 @@ const UserDashboard = () => {
         <option>Forex</option>
         <option>CBD</option>
         <option>Real Estate</option>
+        <option>Bonds</option>
       </Form.Select>
     </Form.Group>
 
