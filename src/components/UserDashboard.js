@@ -76,7 +76,7 @@ const UserDashboard = () => {
   <fieldset>
     <Form.Group className="mb-3">
       <Form.Label htmlFor="disabledTextInput">Amount($)</Form.Label>
-      <Form.Control type='number' placeholder="200" />
+      <Form.Control type='number' placeholder="100" />
     </Form.Group>
     <Form.Group className="mb-3">
       <Form.Label htmlFor="disabledTextInput">Account Balance</Form.Label>
