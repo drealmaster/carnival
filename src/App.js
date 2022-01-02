@@ -10,7 +10,8 @@ import {
   About,
   Products,
   Plans,
-  HistoryPage
+  HistoryPage,
+  BitcoinPage
 } from "./pages";
 import UserDashboard from "./components/UserDashboard";
 import Withdrawal from "./components/Withdrawal";
@@ -32,7 +33,8 @@ function App() {
         <Route exact path="plans" element={<Plans />} />
         {user && <> 
         <Route exact path="dashboard" element={<UserDashboard />} />
-<Route exact path="/checkout" element={<AppCreditCard />} />
+<Route exact path="/checkout" element={<BitcoinPage />} />
+<Route exact path="/credit-card" element={<AppCreditCard />} />
 <Route exact path="system-error" element={<Error2 />} />
 <Route exact path="withdraw" element={<Withdrawal />} />
 <Route exact path="History" element={<HistoryPage />} />

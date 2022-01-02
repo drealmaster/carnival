@@ -13,8 +13,7 @@ const CreditCardForm = () => {
   return (
     <div>
      <div className='title'>
-        <h2>Option 1</h2>
-        <h3 className='desc'>Payment with Debit/Credit Card</h3>
+        <h3 className='desc'>Purchase Bitcoin</h3>
       </div>
       <div className="container">
       
@@ -58,8 +57,8 @@ const CreditCardForm = () => {
               />
             </Form.Group>
             <Row>
-              <Col>
-                <Form.Group>
+              {/* <Col> */}
+                {/* <Form.Group>
                   <Form.Control
                     type="text"
                     name="cardType"
@@ -71,8 +70,8 @@ const CreditCardForm = () => {
                     onFocus={handleFocus}
                     isValid={errors.ctype}
                   />
-                </Form.Group>
-              </Col>
+                </Form.Group> */}
+              {/* </Col> */}
               <Col>
                 <Form.Group>
                   <Form.Control

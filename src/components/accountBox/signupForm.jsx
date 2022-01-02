@@ -88,7 +88,31 @@ const storage = getStorage();
         password: registerPassword,
         id: user.user.uid,
         deposit: 0.00,
-        payout: 0.00
+        payout: 0.00,
+        history1: {
+          id: null,
+          type: null,
+          amount: null,
+          date: null
+        },
+        history2: {
+          id: null,
+          type: null,
+          amount: null,
+          date: null
+        },
+        history3: {
+          id: null,
+          type: null,
+          amount: null,
+          date: null
+        },
+        history4: {
+          id: null,
+          type: null,
+          amount: null,
+          date: null
+        }
       });
   
  

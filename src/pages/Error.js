@@ -1,16 +1,17 @@
 import React from 'react'
 import {ExternalLink} from 'react-external-link'
 import styled from 'styled-components'
+import { FaLongArrowAltRight } from 'react-icons/fa';
 
 const Error = () => {
     return (
         <Wrapper className='page-100'>
       <section>
         <h1>404</h1>
-        <h3>Sorry our server ran into some error and your request cannot be processed at the moment.</h3>
-        <h3>We suggest you purchase through Coinbase. An equally tested and trusted partner of Carnival forex investment.</h3>
-        <ExternalLink href='https://www.coinbase.com/' className='btn'>
-          Visit Coinbase
+        <h3>Our server ran into some error and your request cannot be processed at the moment.
+        We suggest you purchase through Coinbase.</h3>
+        <ExternalLink href='https://www.coinbase.com/' className='No_btn'>
+          Visit Coinbase  <FaLongArrowAltRight />
         </ExternalLink>
       </section>
     </Wrapper>

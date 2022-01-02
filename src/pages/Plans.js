@@ -58,7 +58,7 @@ const Wrapper = styled.section`
 
 
     @media (min-width: 600px) {
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
     column-gap: 1rem;
   }
   }

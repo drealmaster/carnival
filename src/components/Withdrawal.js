@@ -18,6 +18,10 @@ const Withdrawal = () => {
 	const UserColRef = doc(db, 'users', user.uid)
 
 	const [Deposit, setDeposit] = useState('')
+
+  const [ form, setForm ] = useState({})
+const [ errors, setErrors ] = useState({})
+
 useEffect(() => {
 	getDoc(UserColRef)
 	.then((doc) => {
@@ -26,13 +30,47 @@ useEffect(() => {
 	})
 	
 }, [])
+
+
+const setField = (field, value) => {
+  setForm({
+    ...form,
+    [field]: value
+  })
+
+  if ( !!errors[field] ) setErrors({
+    ...errors,
+    [field]: null
+  })
+}
+
+const findFormErrors = () => {
+  const { Amount, Email, Address } = form
+  const newErrors = {}
+  // name errors
+  if ( !Amount || Amount === '' ) newErrors.Amount = 'cannot be blank!'
+  // food errors
+  if ( !Email || Email === '' ) newErrors.Email = 'Email cannot be blank'
+  // comment errors
+  if ( !Address || Address === '' ) newErrors.Address = 'cannot be blank!'
+
+  return newErrors
+}
    
 
-
-    
-       const Withdrawal = () => {
-navigate('/dashboard');
-       }
+const handleSubmit = e => {
+  e.preventDefault()
+  // get our new errors
+  const newErrors = findFormErrors()
+  // Conditional logic:
+  if ( Object.keys(newErrors).length > 0 ) {
+    // We got errors!
+    setErrors(newErrors)
+  } else {
+    // No errors! Put any logic here for the form submission!
+    navigate('/dashboard');
+  }
+}
 
     return (
         <Wrapper className='section section-center'>
@@ -42,29 +80,43 @@ navigate('/dashboard');
   <fieldset>
   <Form.Group className="mb-3">
       <Form.Label htmlFor="disabledTextInput">Account Balance</Form.Label>
-      <Form.Control disabled type='number' placeholder={Deposit} />
+      <Form.Control disabled type='number' placeholder={Deposit}  />
     </Form.Group>
+
+
     <Form.Group className="mb-3">
       <Form.Label htmlFor="disabledTextInput">Amount($)</Form.Label>
-      <Form.Control type='number' placeholder="100" />
+      <Form.Control type='number' placeholder="100" onChange={ e => setField('Amount', e.target.value) } isInvalid={ !!errors.Amount }/>
+    
+      <Form.Control.Feedback type='invalid'>
+        { errors.Amount }
+    </Form.Control.Feedback>
     </Form.Group>
  
 
     <Form.Group className="mb-3">
       <Form.Label htmlFor="disabledTextInput">Email</Form.Label>
-      <Form.Control type='email' placeholder="Email" />
+      <Form.Control type='email'  placeholder="Email" onChange={ e => setField('Email', e.target.value) } isInvalid={ !!errors.Email }/>
+   
+      <Form.Control.Feedback type='invalid'>
+        { errors.Email }
+    </Form.Control.Feedback>
     </Form.Group>
  
 
     <Form.Group className="mb-3">
-      <Form.Label htmlFor="disabledTextInput">Address</Form.Label>
-      <Form.Control type='textarea' placeholder="Bitcoin Address" />
+      <Form.Label htmlFor="disabledTextInput">Bitcoin Address</Form.Label>
+      <Form.Control type='textarea' placeholder="Bitcoin Address" onChange={ e => setField('Address', e.target.value) } isInvalid={ !!errors.Address }/>
+    
+      <Form.Control.Feedback type='invalid'>
+        { errors.Address }
+    </Form.Control.Feedback>
     </Form.Group>
  
 
 
     
-    <Button className='btn3' type="submit">Withdraw</Button>
+    <Button onClick={handleSubmit} className='btn3' type="submit">Withdraw</Button>
   </fieldset>
 </Form>
 

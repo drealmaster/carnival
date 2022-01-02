@@ -49,7 +49,7 @@ const Wrapper = styled.div`
  .btn2{
     background: var(--clr-primary-5) !important;
     color: var(--clr-primary-10) !important;
-    padding: 0.5rem 4.2rem !important;
+    padding: 0.5rem 1.2rem !important;
     letter-spacing: var(--spacing) !important;
     font-weight: 400 !important;
     transition: var(--transition) !important;
