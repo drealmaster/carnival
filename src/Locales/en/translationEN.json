@@ -178,44 +178,43 @@
             "Plan": "Basic",
             "Percentage": "10%",
             "Duration" : "After 24 Hours",
-            "Min" : "$200",
+            "Min" : "$199",
             "Max" : "$500"
         },
         {
             "Plan": "Standard",
             "Percentage": "20%",
             "Duration" : "After 24 Hours",
-            "Min" : "$399",
-            "Max" : "$5,000"
+            "Min" : "$499",
+            "Max" : "$1000"
         },
         {
             "Plan": "Professional",
-            "Percentage": "100%",
+            "Percentage": "50%",
             "Duration" : "After 24 Hours",
-            "Min" : "$2,999",
-            "Max" : "$10,000"
+            "Min" : "$999",
+            "Max" : "$2000"
         },
         {
             "Plan": "Gold",
-            "Percentage": "100%",
-            "Duration" : "  After 48 Hours",
-            "Min" : "$4,999",
-            "Max" : "$15,000"
+            "Percentage": "60%",
+            "Duration" : "  After 1 month",
+            "Min" : "$199",
+            "Max" : "$500"
         },
         {
             "Plan": "Premium",
-            "Percentage": "100%",
-            "Duration" : "After 48 Hours",
-            "Min" : "$14,999",
-            "Max" : "$30,000"
+            "Percentage": "70%",
+            "Duration" : "After 1 month",
+            "Min" : "$499",
+            "Max" : "$2000"
         },
         {
             "Plan": "Elite",
-            "Percentage": "100%",
-            "Duration" : "After 72 Hours",
-            "Min" : "$29,999",
-            "Max" : "UNLIMITED",
-            "selected": "selected"
+            "Percentage": "78%",
+            "Duration" : "After 1 Month",
+            "Min" : "$1,999",
+            "Max" : "UNLIMITED"
         }
       ],
       
