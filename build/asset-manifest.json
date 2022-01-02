@@ -1,28 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.959ea4c8.chunk.css",
-    "main.js": "/static/js/main.d7a99054.chunk.js",
-    "main.js.map": "/static/js/main.d7a99054.chunk.js.map",
+    "main.css": "/static/css/main.9eca686a.chunk.css",
+    "main.js": "/static/js/main.051a33c3.chunk.js",
+    "main.js.map": "/static/js/main.051a33c3.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.216f2557.js",
     "runtime-main.js.map": "/static/js/runtime-main.216f2557.js.map",
     "static/css/2.7356627e.chunk.css": "/static/css/2.7356627e.chunk.css",
-    "static/js/2.6af32f2b.chunk.js": "/static/js/2.6af32f2b.chunk.js",
-    "static/js/2.6af32f2b.chunk.js.map": "/static/js/2.6af32f2b.chunk.js.map",
+    "static/js/2.64825941.chunk.js": "/static/js/2.64825941.chunk.js",
+    "static/js/2.64825941.chunk.js.map": "/static/js/2.64825941.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.7356627e.chunk.css.map": "/static/css/2.7356627e.chunk.css.map",
-    "static/css/main.959ea4c8.chunk.css.map": "/static/css/main.959ea4c8.chunk.css.map",
-    "static/js/2.6af32f2b.chunk.js.LICENSE.txt": "/static/js/2.6af32f2b.chunk.js.LICENSE.txt",
-    "static/media/Bitcoin2.d0875b23.jpg": "/static/media/Bitcoin2.d0875b23.jpg",
-    "static/media/Bonds.5dc1f8a3.jpg": "/static/media/Bonds.5dc1f8a3.jpg",
-    "static/media/IRA2.1a7e5426.jpg": "/static/media/IRA2.1a7e5426.jpg",
+    "static/css/main.9eca686a.chunk.css.map": "/static/css/main.9eca686a.chunk.css.map",
+    "static/js/2.64825941.chunk.js.LICENSE.txt": "/static/js/2.64825941.chunk.js.LICENSE.txt",
     "static/media/Oldman.82ac5f01.jpg": "/static/media/Oldman.82ac5f01.jpg",
-    "static/media/Real2.3b69c776.jpg": "/static/media/Real2.3b69c776.jpg",
-    "static/media/Weed2.63209e57.jpg": "/static/media/Weed2.63209e57.jpg",
     "static/media/Woman.8240df9e.jpg": "/static/media/Woman.8240df9e.jpg",
     "static/media/WorkingWoman.6870de68.jpg": "/static/media/WorkingWoman.6870de68.jpg",
     "static/media/Youngman.14f45b80.jpg": "/static/media/Youngman.14f45b80.jpg",
     "static/media/access.359af57b.svg": "/static/media/access.359af57b.svg",
-    "static/media/forex.1d003c4f.jpg": "/static/media/forex.1d003c4f.jpg",
     "static/media/image1.0adcd568.jpg": "/static/media/image1.0adcd568.jpg",
     "static/media/image4.f950bbbf.jpg": "/static/media/image4.f950bbbf.jpg",
     "static/media/image6.6d594e31.jpg": "/static/media/image6.6d594e31.jpg",
@@ -33,8 +27,8 @@
   "entrypoints": [
     "static/js/runtime-main.216f2557.js",
     "static/css/2.7356627e.chunk.css",
-    "static/js/2.6af32f2b.chunk.js",
-    "static/css/main.959ea4c8.chunk.css",
-    "static/js/main.d7a99054.chunk.js"
+    "static/js/2.64825941.chunk.js",
+    "static/css/main.9eca686a.chunk.css",
+    "static/js/main.051a33c3.chunk.js"
   ]
 }
