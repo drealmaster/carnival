@@ -3,7 +3,7 @@ import { db } from "../firebase";
 import styled from "styled-components";
 import FeaturedProducts from "./FeaturedProducts";
 import { useAuth } from "../context/AuthContext";
-import { collection, getDoc, doc } from "firebase/firestore";
+import { collection, getDoc, doc, onSnapshot } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
@@ -19,25 +19,40 @@ const UserDashboard = () => {
   const navigate = useNavigate();
   const { t, i18n } = useTranslation();
   const { user } = useAuth();
-  const UserColRef = doc(db, "users", user.uid);
+  const UserColRef = doc(db, "users", `${user.uid}`);
   const [Name, setName] = useState("");
   const [Deposit, setDeposit] = useState("");
   const [Payout, setPayout] = useState("");
   const [form, setForm] = useState({});
   const [errors, setErrors] = useState({});
 
-  useEffect(() => {
-    getDoc(UserColRef).then((doc) => {
-      console.log(doc.data(), doc.id);
-      const name = doc.data().name;
-      const deposit = doc.data().deposit;
-      const payout = doc.data().payout;
-      setName(name);
-      setDeposit(deposit);
-      setPayout(payout);
-      console.log(Name);
-    });
-  }, []);
+
+    // getDoc(UserColRef).then((doc) => {
+    //   console.log(doc.data(), doc.id);
+    //   const name = doc.data().name;
+    //   const deposit = doc.data().deposit;
+    //   const payout = doc.data().payout;
+    //   setName(name);
+    //   setDeposit(deposit);
+    //   setPayout(payout);
+    //   console.log(Name);
+    // });
+
+    useEffect(() => {
+      onSnapshot(UserColRef, (doc) => {
+        console.log(doc.data(), doc.id);
+        const name = doc.data().name;
+        const deposit = doc.data().deposit;
+        const payout = doc.data().payout;
+        setName(name);
+        setDeposit(deposit);
+        setPayout(payout);
+        console.log(Name);
+      } )
+    }, [])
+
+
+
 
   const setField = (field, value) => {
     setForm({
@@ -75,19 +90,6 @@ const UserDashboard = () => {
     }
   };
 
-  // UserColRef.doc(user.uid).get().then(doc => {
-  //   const name = doc.data().name
-  //   console.log(name);
-  // })
-  // const q = query(UserColRef)
-
-  // onSnapshot(q, ((snapshot) => {
-  //     let books = []
-  //     snapshot.docs.forEach((doc) => {
-  //   books.push({ ...doc.data(), id: doc.id })
-  //     })
-  //     console.log(books[1]);
-  //   }))
 
   return (
     <Wrapper className="section section-center">
