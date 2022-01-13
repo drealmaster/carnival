@@ -20,7 +20,7 @@
     "Logout": "Logout",
     "GetStarted": "Get started",
     "SeeMore": "See More",
-    "InvestmentPlans": "Investment Plans",
+    "InvestmentPlans": "Investment Options",
     "ReviewHeader": "reviews",
     "About1": "Carnival Forex Investments is an independent investment platform currently managing $189 million for individuals, families and institutions around the world. For over 40 years, we've helped clients work toward their financial goals. With roots as an institutional money manager, Carnival Forex Investments provides the same institutional-caliber expertise to individuals. This means you get a disciplined investment strategy along with our unique, high-touch client service. We welcome the opportunity to learn more about your situation and mutually discover if we could be a fit for you.",
     "About2": " At Carnival Forex Investments, we strive to provide high-touch service and education so that our clients fully understand their investment strategies and are able to stick with them despite temptation to do otherwise. A primary way we do this is by providing you a dedicated Investment Counselor who, among other things, will answer questions about your Carnival Forex portfolio and on other investment advisers or products you are considering.",
@@ -178,42 +178,56 @@
             "Plan": "Basic",
             "Percentage": "10%",
             "Duration" : "After 24 Hours",
-            "Min" : "$199",
-            "Max" : "$500"
+            "Min" : "$200",
+            "Max" : "$499"
         },
         {
             "Plan": "Standard",
             "Percentage": "20%",
             "Duration" : "After 24 Hours",
-            "Min" : "$499",
-            "Max" : "$1000"
+            "Min" : "$500",
+            "Max" : "$999"
         },
         {
             "Plan": "Professional",
             "Percentage": "50%",
             "Duration" : "After 24 Hours",
-            "Min" : "$999",
-            "Max" : "$2000"
+            "Min" : "$1,000",
+            "Max" : "$4,999"
         },
         {
             "Plan": "Gold",
-            "Percentage": "60%",
-            "Duration" : "  After 1 month",
-            "Min" : "$199",
-            "Max" : "$500"
+            "Percentage": "100%",
+            "Duration" : "After 24 Hours",
+            "Min" : "$5,000",
+            "Max" : "$9,999"
         },
         {
             "Plan": "Premium",
-            "Percentage": "70%",
-            "Duration" : "After 1 month",
-            "Min" : "$499",
-            "Max" : "$2000"
+            "Percentage": "100%",
+            "Duration" : "After 24 Hours",
+            "Min" : "$10,000",
+            "Max" : "UNLIMITED"
         },
         {
-            "Plan": "Elite",
+            "Plan": "Basic Monthly",
+            "Percentage": "68%",
+            "Duration" : "After 1 month",
+            "Min" : "$500",
+            "Max" : "$999"
+        },
+        {
+            "Plan": "Standard Monthly",
             "Percentage": "78%",
-            "Duration" : "After 1 Month",
-            "Min" : "$1,999",
+            "Duration" : "After 1 month",
+            "Min" : "$1,000",
+            "Max" : "$5,999"
+        },
+        {
+            "Plan": "Professional Monthly",
+            "Percentage": "88%",
+            "Duration" : "After 1 month",
+            "Min" : "$6,000",
             "Max" : "UNLIMITED"
         }
       ],

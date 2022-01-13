@@ -2,8 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext'
 const Plans = () => {
     const { t, i18n } = useTranslation();
+    const { user } = useAuth()
     return (
         <Wrapper className='section section-center'>
 <h2 className="heading-primary">our Pricing</h2>
@@ -18,7 +20,8 @@ const Plans = () => {
                <li className="plan-item">{t("Minimum")}: {Min}</li>
                <li className="plan-item">{t("Maximum")}: {Max}</li>
              </ul>
-             <Link to="/signin" className="btn2 buy-now">Invest Now</Link>
+            <Link to={user ? "/dashboard" : "/login"} className="btn2 buy-now">{user ? "Get Started" : "Invest now"}</Link>
+            
           
          </div>)
 

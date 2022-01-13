@@ -46,10 +46,6 @@ const Nav = ({onChange}) => {
           )}
         </ul>
         <CartButtons />
-        <select name="language" onChange={onChange}>
-            <option value="en">English</option>
-            <option value="ch">Chinese</option>
-          </select>
       </div>
     </NavContainer>
   )

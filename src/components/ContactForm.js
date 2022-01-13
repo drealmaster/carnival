@@ -218,10 +218,10 @@ textarea.input {
 
 .btn2 {
   padding: 0.6rem 1.3rem;
-  background-color: #fff;
+  background-color: var(--clr-primary-5);
   border: 2px solid #fafafa;
   font-size: 0.95rem;
-  color: var(--clr-primary-10);
+  color: #fff;
   line-height: 1;
   border-radius: 25px;
   outline: none;

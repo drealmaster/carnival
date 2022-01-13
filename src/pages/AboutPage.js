@@ -8,6 +8,14 @@ import { Footer } from "../components";
 import { useTranslation } from 'react-i18next'
 const AboutPage = () => {
   const { t, i18n } = useTranslation();
+
+  const fetchUsers = () => {
+    // Where we're fetching data from
+    return fetch("https://blockchain.info/charts/$chart-type?format=json")
+    // We get the API response and receive data in JSON format
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch ((error) => console.error(error));}
   return (
     <main>
       <Wrapper className="page section section-center">

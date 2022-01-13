@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Navbar, Sidebar } from "./components";
-import AppLoginLogout from "./AppLoginLogout";
 import { useAuth } from "./context/AuthContext";
 import {
   Home,
@@ -17,6 +16,8 @@ import UserDashboard from "./components/UserDashboard";
 import Withdrawal from "./components/Withdrawal";
 import AppCreditCard from "./AppCreditCard"
 import i16n from './i18n'
+import SingIn from "./components/SingIn";
+import SignUp from "./components/SignUp";
 
 function App() {
   const { user } = useAuth()
@@ -39,7 +40,8 @@ function App() {
 <Route exact path="withdraw" element={<Withdrawal />} />
 <Route exact path="History" element={<HistoryPage />} />
      </>}
-        <Route exact path="login" element={<AppLoginLogout />} />
+        <Route exact path="login" element={<SingIn />} />
+        <Route exact path="signup" element={<SignUp />} />
         <Route exact path="services" element={<Products />} />
         <Route exact path="*" element={<Error />} />
         

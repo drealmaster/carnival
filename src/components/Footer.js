@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { FaFacebook, FaLinkedin  } from 'react-icons/fa'
 const Footer = () => {
   return (
-    <Wrapper class="footer section bd-container">
+    <Wrapper class="footer section bd-container ">
             <div class="footer__container bd-grid">
                 <div class="footer__content">
                 <Link class='footer__logo' to='/'>Carnival Forex</Link>
