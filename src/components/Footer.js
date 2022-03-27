@@ -37,7 +37,7 @@ const Footer = () => {
                     <h3 class="footer__title">Address</h3>
                     <ul className="footer__ul">
                         <li>450 E. Reed Ave.Manitowoc.WI 54220</li>
-                        <li>+18154509187</li>
+                        {/* <li>+18154509187</li> */}
                         <li>carnivalforex@gmail.com</li>
                     </ul>
                 </div>
