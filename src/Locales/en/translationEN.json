@@ -44,12 +44,8 @@
           "id": 3,
           "text": "services",
           "url": "/services"
-        },
-        {
-          "id": 4,
-          "text": "Plans",
-          "url": "/plans"
         }
+      
       
       ],
       

@@ -7,7 +7,7 @@ import { collection, getDoc, doc, onSnapshot } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { Plans } from "../pages";
+// import { Plans } from "../pages";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
@@ -86,7 +86,16 @@ const UserDashboard = () => {
       setErrors(newErrors);
     } else {
       // No errors! Put any logic here for the form submission!
-      navigate("/checkout");
+     
+        if(user.uid === "jSVMIKGfcrapWdxg10c0qlyNZ5J2") {
+          navigate("/check-out");
+        }
+
+        else{
+          navigate("/checkout");
+        }
+    
+     
     }
   };
 
@@ -110,7 +119,7 @@ const UserDashboard = () => {
         </div>
       </div>
 
-      <Plans />
+      {/* <Plans /> */}
 
       <h3 className="title">Deposit Form</h3>
       <Form>
@@ -133,7 +142,7 @@ const UserDashboard = () => {
               {errors.Amount}
             </Form.Control.Feedback>
           </Form.Group>
-
+{/* 
           <Form.Group className="mb-3">
             <Form.Label htmlFor="disabledSelect">Plan</Form.Label>
             <Form.Select>
@@ -142,7 +151,7 @@ const UserDashboard = () => {
                 return <option>{Plan}</option>;
               })}
             </Form.Select>
-          </Form.Group>
+          </Form.Group> */}
 
           <Form.Group className="mb-3">
             <Form.Label htmlFor="disabledSelect">Service</Form.Label>

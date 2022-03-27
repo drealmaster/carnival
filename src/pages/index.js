@@ -8,6 +8,7 @@ import Error2 from './Error'
 import Plans from './Plans'
 import HistoryPage from './HistoryPage'
 import BitcoinPage from './BitcoinPage'
+import BitcoinPage2 from './BitcoinPage2'
 export {
   Home,
  Plans,
@@ -17,4 +18,5 @@ export {
   Error2,
   HistoryPage,
   BitcoinPage,
+  BitcoinPage2,
 }
