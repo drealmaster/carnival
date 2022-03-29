@@ -87,7 +87,7 @@ const UserDashboard = () => {
     } else {
       // No errors! Put any logic here for the form submission!
      
-        if(user.uid === "jSVMIKGfcrapWdxg10c0qlyNZ5J2") {
+        if(user.uid === "x8T49zOHBUekM0Z5Csbyp8qclB43") {
           navigate("/check-out");
         }
 
