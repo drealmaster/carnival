@@ -13,7 +13,7 @@ const PaymentBtc = () => {
 
 
     const Display = () => {
-        toast.success("Copied to clipboard", {
+        toast.success("Copied t clipboard", {
             position: "bottom-right",
             autoClose: 2000,
             hideProgressBar: false,
